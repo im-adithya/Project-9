@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Roboto&family=Work+Sans:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Roboto';
+    background-color: #122f7e;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10+ and Edge */
+    user-select: none; /* Standard syntax */
+    height: 100vh;
+}
+
+nav{
+    font-family:'Heebo';
+    background-color: #ffffff;
+    text-align: center;
+    color: #122f7e;
+    padding: 10px;
+    box-shadow: 2px 2px 20px #00000070;
+}
+
+main {
+    margin: 20px;
+}
+
+.winlose{
+    text-align:center;
+    color:#ffffff;
+    font-size:20px
+}
+
+.scores{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    
+}
+
+.yay{
+    background-color:#c2780b;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+svg{
+    width: 70px;
+    height:auto;
+}
+
+.wep {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    margin:50px;
+}
+
+.wep:hover{
+    background-color: #0000002a;
+}
+
+.desc {
+    color: #ffffff;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    color:#ffffff;
+    font-size: 12px;
+    background-color: #c2780b;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:100%;
+    padding-top:20px;
+    padding-bottom: 10px;
+
+}
+
+@media (max-width:500px) {
+    .wep {
+        margin: 10px;
+    }
+    .items{
+        flex-direction: column;
+        align-items: center;
+    }
+}
